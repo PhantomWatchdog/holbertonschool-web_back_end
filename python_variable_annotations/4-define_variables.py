@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-    
+
 """ Define variables with specified values """
 
 
