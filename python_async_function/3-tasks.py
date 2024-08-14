@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Asynchronous coroutine that takes an integer argument and returns a task
+"""
+
 import asyncio
 from typing import Any
 
