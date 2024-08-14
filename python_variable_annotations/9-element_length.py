@@ -9,7 +9,7 @@ contains a string from the input list and its length.
 from typing import List, Tuple, Sequence, Iterable
 
 
-def element_length(input_list: Iterable[Sequence]
+def element_length(lst: Iterable[Sequence]
                    ) -> List[Tuple[Sequence, int]]:
     """Return list of tuples containing strings and their lengths"""
-    return [(i, len(i)) for i in input_list]
+    return [(i, len(i)) for i in lst]
