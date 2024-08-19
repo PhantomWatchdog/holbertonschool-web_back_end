@@ -4,12 +4,10 @@ import asyncio
 import random
 import typing
 
-""" Asynchronous generator that yields random
-floating-point numbers between 0 and 10.
-"""
+""" Asynchronous generator"""
 
 
-async def async_generator() -> typing.Generator[float, None, None]:
+async def async_generator() -> typing.AsyncGenerator[float, None]:
     """
     Asynchronous generator that yields random
     floating-point numbers between 0 and 10.
