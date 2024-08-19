@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import asyncio
-from typing import List
+from typing import AsyncGenerator
 import random
 
 """ Asynchronous generator that yields random
@@ -9,7 +9,7 @@ floating-point numbers between 0 and 10.
 """
 
 
-async def async_generator() -> List[float, None]:
+async def async_generator() -> AsyncGenerator[float, None]:
     """
     Asynchronous generator that yields random floating-point numbers between 0 and 10.
 
