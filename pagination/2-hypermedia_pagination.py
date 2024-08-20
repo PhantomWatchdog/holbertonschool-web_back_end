@@ -47,3 +47,18 @@ class Server:
 
         return self.dataset()[start_index:end_index]
     
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
+        """Return a dictionary containing the following key-value pairs
+        """
+        data = self.get_page(page, page_size)
+        total_pages = len(self.dataset()) / page_size
+        if len(self.dataset()) % page_size:
+            total_pages += 1
+        return {
+            "page_size": len(data),
+            "page": page,
+            "data": data,
+            "next_page": page + 1 if page + 1 < total_pages else None,
+            "prev_page": page - 1 if page > 1 else None,
+            "total_pages": int(total_pages)
+        }
