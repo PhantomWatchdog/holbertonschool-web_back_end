@@ -1,4 +1,6 @@
 // List all docs with name "Holberton school"
 db.school.aggregate([
-  { $match: { name: "Holberton School" } }, //Filter documents
+  { 
+    $match:{name: "Holberton School"}
+  }
 ])
