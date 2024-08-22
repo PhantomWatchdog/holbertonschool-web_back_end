@@ -1,2 +1,4 @@
 // List all docs with name "Holberton school"
-db.school.find({ name: "Holberton School" }).forEach(doc => printjson(doc))
+db.school.aggregate([
+  { $match: { name: "Holberton School" } }, //Filter documents
+])
