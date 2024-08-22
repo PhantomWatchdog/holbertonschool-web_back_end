@@ -1,0 +1,2 @@
+// Print num of documents in collection school
+db.school.countDocuments()
