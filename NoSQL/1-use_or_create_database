@@ -1,0 +1,2 @@
+// Create database with name "my_db" and use it
+use my_db
