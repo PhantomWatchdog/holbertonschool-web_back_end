@@ -1,6 +1,6 @@
 // List all docs with name "Holberton school"
 db.school.aggregate([
   { 
-    $match:{name: "Holberton School"}
+    $match:{name: "Holberton school"}
   }
 ])
