@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-""" Insert a document in collection based on kwargs """
+""" 10-update_topics """
 
-def insert_school(mongo_collection, **kwargs):
-    """ Insert a document in collection based on kwargs """
-    return mongo_collection.insert_one(kwargs).inserted_id
+def update_topics(mongo_collection, name, topics):
+    """Update the topics of a school document based on the name"""
+    mongo_collection.update_one({"name": name}, {"$set": {"topics": topics}})
